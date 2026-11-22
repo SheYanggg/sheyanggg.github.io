@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic CV of Yang She, a Ph.D. candidate at Beijing Institute of Technology working on computational welding and scientific machine learning.">
+  <meta name="color-scheme" content="light">
+  <title>Yang She | Academic CV</title>
+  <style>
+    :root {
+      --paper: #f7f9fc;
+      --ink: #17243a;
+      --muted: #4d5d73;
+      --accent: #1551c7;
+      --line: #d7deea;
+      --rule: #9ab0d7;
+      --serif: 'Songti SC', 'Noto Serif CJK SC', SimSun, serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.65; }
+    a { color: var(--accent); text-underline-offset: 0.23em; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+
+    .page { width: min(100% - 3rem, 66rem); margin-inline: auto; }
+
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      padding-block: 1.15rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand { margin: 0; font-weight: 750; }
+    .nav { display: flex; flex-wrap: wrap; gap: 0.35rem clamp(0.8rem, 2.5vw, 1.8rem); }
+    .nav a { padding-block: 0.25rem; color: var(--muted); font-size: 0.9375rem; text-decoration: none; }
+    .nav a:hover { color: var(--accent); text-decoration: underline; }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(13.5rem, 0.38fr);
+      align-items: center;
+      gap: 1.75rem 3rem;
+      padding-block: clamp(3.25rem, 8vw, 6.5rem) clamp(2.75rem, 6vw, 4.5rem);
+      border-bottom: 2px solid var(--rule);
+    }
+
+    .eyebrow { margin: 0 0 0.7rem; color: var(--accent); font-weight: 750; }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, var(--serif);
+      font-size: clamp(3.25rem, 9vw, 7.2rem);
+      font-weight: 500;
+      letter-spacing: -0.055em;
+      line-height: 1;
+      overflow-wrap: anywhere;
+    }
+
+    .summary { max-width: 36rem; margin: 1.2rem 0 0; color: var(--muted); font-size: 1.0625rem; }
+    .affiliation { margin: 1.15rem 0 0; font-size: clamp(1.1rem, 2vw, 1.3rem); font-weight: 650; }
+    .affiliation + .summary { margin-top: 0.6rem; }
+    .profile { display: grid; justify-items: start; gap: 0.7rem; }
+    .portrait {
+      display: block;
+      width: min(100%, 13.5rem);
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: 0.4rem;
+    }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.15rem 0.4rem; }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      padding: 0.45rem 0.95rem;
+      border: 1px solid var(--accent);
+      border-radius: 0.25rem;
+      background: var(--accent);
+      color: white;
+      font: inherit;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #103e99; border-color: #103e99; }
+    .button--outline { background: transparent; color: var(--accent); }
+    .button--outline:hover { background: #e9eff9; }
+
+    .resume-section {
+      display: grid;
+      grid-template-columns: minmax(9rem, 0.37fr) minmax(0, 1fr);
+      align-items: baseline;
+      gap: 0.65rem 2.75rem;
+      padding-block: 1.6rem;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 1.25rem;
+    }
+
+    h2 { margin: 0; font-family: var(--serif); font-size: 1.4rem; line-height: 1.4; }
+    .entries { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+    .entry h3, .entry p { margin: 0; }
+    .entry h3 { font-size: 1rem; font-weight: 700; line-height: 1.5; }
+    .entry .details { margin-top: 0.2rem; color: var(--muted); }
+    .entry .project-role { margin-top: 0.2rem; color: var(--accent); font-size: 0.9375rem; }
+    .entry .publication-title { color: var(--ink); text-decoration-color: var(--rule); }
+    .entry .publication-title:hover { color: var(--accent); text-decoration-color: currentColor; }
+    main { padding-bottom: 3rem; }
+
+    @media (max-width: 41rem) {
+      .page { width: calc(100% - 2rem); }
+      .intro, .resume-section { grid-template-columns: minmax(0, 1fr); }
+      .portrait { width: min(100%, 10rem); }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <p class="brand">Academic CV</p>
+      <nav class="nav" aria-label="CV sections">
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </header>
+
+    <main>
+      <header class="intro">
+        <div>
+          <p class="eyebrow">Computational welding · Scientific machine learning</p>
+          <h1>Yang She</h1>
+          <p class="affiliation">Ph.D. candidate, Beijing Institute of Technology</p>
+          <p class="summary">I study heat transfer and stress in welding using finite-element simulation and physics-informed machine learning. My research also covers parallel thermal simulation, magnetic-field-assisted welding, and in-process defect detection.</p>
+        </div>
+        <div class="profile">
+          <img class="portrait" src="./portrait.jpg" alt="Portrait of Yang She" width="344" height="286">
+          <div class="actions">
+            <a class="button" href="https://github.com/SheYanggg">GitHub</a>
+            <a class="button button--outline" href="https://scholar.google.com/citations?user=sxteG-IAAAAJ&amp;hl=en">Google Scholar</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="resume-section" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Project experience</h2>
+        <ul class="entries" role="list">
+          <li class="entry">
+            <h3>Physics-informed thermal modeling for wire arc additive manufacturing</h3>
+            <p class="project-role">Doctoral research · Sep 2024–present</p>
+            <p class="details">Developed physics-informed models in PyTorch to predict transient temperatures during single-track wire arc deposition. Benchmarked the predictions against finite-element reference solutions.</p>
+          </li>
+          <li class="entry">
+            <h3>Magnetic-field-assisted TIG welding</h3>
+            <p class="project-role">Led the study · <a href="#tig-paper">First-author publication</a></p>
+            <p class="details">Designed the methodology and curated the data for a study of how magnetic field orientation changes arc deflection, weld bead geometry, and grain size near the fusion line.</p>
+          </li>
+          <li class="entry">
+            <h3>Multimodal defect detection in gas metal arc welding</h3>
+            <p class="project-role">Software contributor · <a href="#mbgn-paper">Second-author publication</a></p>
+            <p class="details">Contributed software to MBGN, which combines synchronized welding current and voltage signals with molten-pool images. The model achieved a macro-F1 of 0.719 on the held-out evaluation set.</p>
+          </li>
+          <li class="entry">
+            <h3>Parallel finite-element simulation of welding heat transfer</h3>
+            <p class="project-role">Benchmark contributor · <a href="#solver-paper">Co-authored publication</a></p>
+            <p class="details">Contributed to multicore scaling tests and solver benchmarking for transient three-dimensional welding simulations. The team evaluated 17 Krylov solver and preconditioner combinations on 1–16 CPU cores using FEniCSx and PETSc.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="resume-section" id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <ul class="entries" role="list">
+          <li class="entry" id="tig-paper">
+            <h3><a class="publication-title" href="https://doi.org/10.1016/j.matlet.2026.140372">Effects of magnetic field orientation on bead formation and microstructure in TIG welding</a></h3>
+            <p class="details"><strong>Yang She</strong> et al. · <cite>Materials Letters</cite> 412, 140372 (2026)</p>
+          </li>
+          <li class="entry" id="mbgn-paper">
+            <h3><a class="publication-title" href="https://doi.org/10.1016/j.ymssp.2026.114696">MBGN: multimodal BiFPN gate network for in-process GMAW defect detection</a></h3>
+            <p class="details">Xuefeng Zhao, <strong>Yang She</strong>, et al. · <cite>Mechanical Systems and Signal Processing</cite> 258, 114696 (2026)</p>
+          </li>
+          <li class="entry">
+            <h3><a class="publication-title" href="https://doi.org/10.1088/1742-6596/3277/1/012099">Parallel performance of FEniCSx-based welding temperature field simulation on multicore CPUs</a></h3>
+            <p class="details">Zixuan Wen et al. · <cite>Journal of Physics: Conference Series</cite> 3277(1), 012099 (2026)</p>
+          </li>
+          <li class="entry" id="solver-paper">
+            <h3><a class="publication-title" href="https://doi.org/10.1016/j.cwe.2026.100070">Parallel benchmarking of Krylov solvers and preconditioners for three-dimensional welding thermal simulation using FEniCSx/PETSc</a></h3>
+            <p class="details">Xinyu Xie et al. · <cite>China Welding</cite> 35(4), 100070 (2026)</p>
+          </li>
+          <li class="entry">
+            <h3><a class="publication-title" href="https://doi.org/10.1088/1742-6596/3080/1/012061">Control of arc behavior and temperature field distribution in TIG welding of carbon steel under transverse magnetic fields</a></h3>
+            <p class="details">Xinru Liu, <strong>Yang She</strong>, et al. · <cite>Journal of Physics: Conference Series</cite> 3080(1), 012061 (2025)</p>
+          </li>
+          <li class="entry">
+            <h3><a class="publication-title" href="https://www.rjggy.com/article/doi/10.14158/j.cnki.1001-3814.20230690" lang="zh-CN">缆式焊丝电弧物理特性研究现状</a></h3>
+            <p class="details"><strong>Yang She</strong> et al. · <cite>Hot Working Technology</cite> 54(9), 6–11, 16 (2025, in Chinese)</p>
+          </li>
+        </ul>
+      </section>
+      <section class="resume-section" id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <ul class="entries" role="list">
+          <li class="entry">
+            <h3>Ph.D. candidate in Materials Science and Engineering</h3>
+            <p class="details">Beijing Institute of Technology · Sep 2024–present</p>
+            <p class="details">Advisor: Prof. Xinghua Yu</p>
+          </li>
+          <li class="entry">
+            <h3>M.Eng. in Materials and Chemical Engineering</h3>
+            <p class="details">Harbin Engineering University · Sep 2021–Jun 2024</p>
+          </li>
+          <li class="entry">
+            <h3>B.Eng. in Welding Technology and Engineering</h3>
+            <p class="details">Jiangsu University of Science and Technology · Sep 2016–Jun 2020</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="resume-section" id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical skills</h2>
+        <ul class="entries" role="list">
+          <li class="entry">
+            <h3>Scientific computing</h3>
+            <p class="details">Python, FEniCS/FEniCSx, PETSc, MPI, finite-element modeling, transient heat transfer, iterative solver benchmarking</p>
+          </li>
+          <li class="entry">
+            <h3>Scientific machine learning</h3>
+            <p class="details">PyTorch, physics-informed neural networks, operator learning, multimodal deep learning</p>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
