@@ -3,194 +3,200 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yang She’s academic homepage. Research, projects, and publications in computational welding and scientific machine learning.">
-  <meta name="color-scheme" content="dark">
-  <title>Yang She · 佘阳 | Academic Homepage</title>
+  <meta name="description" content="Research projects and publications by Yang She, a Ph.D. candidate working on computational welding and scientific machine learning.">
+  <title>Yang She | Academic Homepage</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <a class="skip-link" href="#about" data-zh="跳到主要内容">Skip to content</a>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="site-top">
+    <header class="site-header shell">
+      <a class="brand" href="./">Yang She</a>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </header>
+    <section class="banner" aria-labelledby="name">
+      <div class="banner-inner shell">
+        <p class="eyebrow">Beijing Institute of Technology</p>
+        <h1 id="name">Yang She</h1>
+        <p class="banner-description">Computational welding and scientific machine learning</p>
+      </div>
+    </section>
+  </div>
 
-  <header class="site-header shell">
-    <a class="brand" href="#about" data-zh="佘阳">Yang She</a>
-    <nav class="site-nav" aria-label="Sections">
-      <a href="#about" data-zh="简介">About</a>
-      <a href="#projects" data-zh="项目">Projects</a>
-      <a href="#publications" data-zh="论文">Publications</a>
-      <a href="#education" data-zh="教育">Education</a>
-      <a href="#skills" data-zh="技能">Skills</a>
-    </nav>
-    <nav class="languages" aria-label="Language selection / 语言选择">
-      <a href="?lang=zh" lang="zh-CN" hreflang="zh-CN" data-language="zh">中文</a>
-      <a href="?lang=en" lang="en" hreflang="en" data-language="en" aria-current="page">English</a>
-    </nav>
-  </header>
-
-  <main class="shell">
-    <section class="hero" id="about" aria-labelledby="name">
-      <div class="hero-content">
-        <p class="eyebrow" data-zh="焊接仿真与科学机器学习">Computational welding &amp; scientific machine learning</p>
-        <h1 id="name">
-          <span data-zh="佘阳">Yang She</span>
-          <span class="name-secondary" lang="zh-CN" data-zh="Yang She">佘阳</span>
-        </h1>
-        <p class="affiliation" data-zh="北京理工大学 · 材料科学与工程博士研究生">Ph.D. candidate in Materials Science and Engineering<br>Beijing Institute of Technology</p>
-        <p class="summary" data-zh="我用有限元仿真与物理信息机器学习研究焊接过程中的传热与应力。我的工作也涉及焊接热场并行求解、磁场辅助焊接和焊接缺陷原位检测。">I study heat transfer and stress in welding using finite-element simulation and physics-informed machine learning. My work also covers parallel thermal simulation, magnetic-field-assisted welding, and in-process weld defect detection.</p>
-        <div class="profile-links">
-          <a class="profile-link" href="https://scholar.google.com/citations?user=sxteG-IAAAAJ&amp;hl=en">Google Scholar</a>
-          <a class="profile-link" href="https://github.com/SheYanggg">GitHub</a>
+  <div class="content-layout shell">
+    <main class="feed">
+      <article class="post-card" id="about" aria-labelledby="about-title">
+        <div class="post-body">
+          <h2 id="about-title">About me</h2>
+          <p>I am a Ph.D. candidate in Materials Science and Engineering at Beijing Institute of Technology, advised by Prof. Xinghua Yu.</p>
+          <p>I study how heat and stress develop during welding using finite-element simulation and physics-informed machine learning. My current work covers wire arc additive manufacturing, parallel thermal simulation, and in-process monitoring.</p>
         </div>
-      </div>
-      <div class="portrait-frame">
-        <img src="./portrait.jpg" alt="Portrait of Yang She" width="344" height="286" fetchpriority="high">
-      </div>
-    </section>
+      </article>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <h2 class="section-title" id="projects-title" data-zh="研究项目">Research projects</h2>
-      <ul class="project-grid" role="list">
-        <li class="project-card">
-          <h3 data-zh="电弧增材制造的物理信息热建模">Physics-informed thermal modeling for wire arc additive manufacturing</h3>
-          <p class="project-role" data-zh="博士研究 · 2024 年 9 月至今">Doctoral research · Sep 2024–present</p>
-          <p class="details" data-zh="使用 PyTorch 开发物理信息模型，预测单道电弧沉积过程的瞬态温度，并以有限元参考解评估预测结果。">Developed physics-informed models in PyTorch to predict transient temperatures during single-track wire arc deposition. Benchmarked the predictions against finite-element reference solutions.</p>
-        </li>
-        <li class="project-card">
-          <h3 data-zh="磁场辅助 TIG 焊接">Magnetic-field-assisted TIG welding</h3>
-          <p class="project-role"><span data-zh="主导研究">Led the study</span> · <a href="#tig-paper" data-zh="第一作者论文">First-author publication</a></p>
-          <p class="details" data-zh="负责研究方法设计与数据整理，分析磁场方向如何改变电弧偏转、焊道形貌及熔合线附近的晶粒尺寸。">Designed the methodology and curated the data for a study of how magnetic field orientation changes arc deflection, weld bead geometry, and grain size near the fusion line.</p>
-        </li>
-        <li class="project-card">
-          <h3 data-zh="GMAW 多模态缺陷检测">Multimodal defect detection in gas metal arc welding</h3>
-          <p class="project-role"><span data-zh="软件贡献">Software contributor</span> · <a href="#mbgn-paper" data-zh="第二作者论文">Second-author publication</a></p>
-          <p class="details" data-zh="参与 MBGN 的软件开发。模型融合时序对齐的焊接电流、电压和熔池图像，在留出评估集上的宏平均 F1 为 0.719。">Contributed software to MBGN, which combines synchronized welding current and voltage signals with molten-pool images. The model achieved a macro-F1 of 0.719 on the held-out evaluation set.</p>
-        </li>
-        <li class="project-card">
-          <h3 data-zh="焊接热场的并行有限元仿真">Parallel finite-element simulation of welding heat transfer</h3>
-          <p class="project-role"><span data-zh="参与基准测试">Benchmark contributor</span> · <a href="#solver-paper" data-zh="共同作者论文">Co-authored publication</a></p>
-          <p class="details" data-zh="参与三维瞬态焊接热场仿真的多核扩展性与求解器基准测试。团队使用 FEniCSx 和 PETSc，在 1–16 个 CPU 核上评估了 17 种 Krylov 求解器与预条件器组合。">Contributed to multicore scaling tests and solver benchmarking for transient three-dimensional welding simulations. The team evaluated 17 Krylov solver and preconditioner combinations on 1–16 CPU cores using FEniCSx and PETSc.</p>
-        </li>
-      </ul>
-    </section>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Research projects</h2>
+        <ul class="project-feed" role="list">
+          <li>
+            <article class="post-card">
+              <div class="post-cover cover-thermal" aria-hidden="true"></div>
+              <div class="post-body">
+                <p class="post-meta">Doctoral research · September 2024–present</p>
+                <h3><a href="./projects.html#thermal-modeling">Physics-informed thermal modeling for wire arc additive manufacturing</a></h3>
+                <p class="details">Developed physics-informed PyTorch models for transient temperature prediction in single-track wire arc deposition and evaluated them against finite-element reference solutions.</p>
+                <a class="read-link" href="./projects.html#thermal-modeling" aria-label="Read project: Physics-informed thermal modeling">Read project</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="post-card">
+              <div class="post-cover cover-field" aria-hidden="true"></div>
+              <div class="post-body">
+                <p class="post-meta">Study lead · First author</p>
+                <h3><a href="./projects.html#magnetic-welding">Magnetic-field-assisted TIG welding</a></h3>
+                <p class="details">Designed the methodology and curated the data for a study of how field direction affects arc deflection, weld bead geometry, and grain size near the fusion line.</p>
+                <a class="read-link" href="./projects.html#magnetic-welding" aria-label="Read project: Magnetic-field-assisted TIG welding">Read project</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="post-card">
+              <div class="post-cover cover-monitoring" aria-hidden="true"></div>
+              <div class="post-body">
+                <p class="post-meta">Software contributor · Second author</p>
+                <h3><a href="./projects.html#defect-detection">Multimodal defect detection in gas metal arc welding</a></h3>
+                <p class="details">Contributed software to MBGN, a model that combines synchronized welding current, voltage, and molten-pool imagery. It achieved 0.719 macro-F1 on the held-out evaluation set.</p>
+                <a class="read-link" href="./projects.html#defect-detection" aria-label="Read project: Multimodal defect detection">Read project</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="post-card">
+              <div class="post-cover cover-solver" aria-hidden="true"></div>
+              <div class="post-body">
+                <p class="post-meta">Benchmark contributor · Co-author</p>
+                <h3><a href="./projects.html#parallel-simulation">Parallel finite-element simulation of welding heat transfer</a></h3>
+                <p class="details">Contributed to FEniCSx/PETSc benchmarks of three-dimensional transient welding simulations. The team evaluated 17 solver and preconditioner combinations on 1–16 CPU cores.</p>
+                <a class="read-link" href="./projects.html#parallel-simulation" aria-label="Read project: Parallel finite-element simulation">Read project</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
-      <h2 class="section-title" id="publications-title" data-zh="发表论文">Publications</h2>
-      <ul class="publication-list" role="list">
-        <li class="publication" id="tig-paper">
-          <time class="publication-year" datetime="2026">2026</time>
-          <div class="publication-copy">
-            <h3><a href="https://doi.org/10.1016/j.matlet.2026.140372" lang="en">Effects of magnetic field orientation on bead formation and microstructure in TIG welding</a></h3>
-            <p class="details"><strong>Yang She</strong> et al. · <cite>Materials Letters</cite> 412, 140372</p>
-          </div>
-        </li>
-        <li class="publication" id="mbgn-paper">
-          <time class="publication-year" datetime="2026">2026</time>
-          <div class="publication-copy">
-            <h3><a href="https://doi.org/10.1016/j.ymssp.2026.114696" lang="en">MBGN: multimodal BiFPN gate network for in-process GMAW defect detection</a></h3>
-            <p class="details">Xuefeng Zhao, <strong>Yang She</strong>, et al. · <cite>Mechanical Systems and Signal Processing</cite> 258, 114696</p>
-          </div>
-        </li>
-        <li class="publication">
-          <time class="publication-year" datetime="2026">2026</time>
-          <div class="publication-copy">
-            <h3><a href="https://doi.org/10.1088/1742-6596/3277/1/012099" lang="en">Parallel performance of FEniCSx-based welding temperature field simulation on multicore CPUs</a></h3>
-            <p class="details">Zixuan Wen et al. · <cite>Journal of Physics: Conference Series</cite> 3277(1), 012099</p>
-          </div>
-        </li>
-        <li class="publication" id="solver-paper">
-          <time class="publication-year" datetime="2026">2026</time>
-          <div class="publication-copy">
-            <h3><a href="https://doi.org/10.1016/j.cwe.2026.100070" lang="en">Parallel benchmarking of Krylov solvers and preconditioners for three-dimensional welding thermal simulation using FEniCSx/PETSc</a></h3>
-            <p class="details">Xinyu Xie et al. · <cite>China Welding</cite> 35(4), 100070</p>
-          </div>
-        </li>
-        <li class="publication">
-          <time class="publication-year" datetime="2025">2025</time>
-          <div class="publication-copy">
-            <h3><a href="https://doi.org/10.1088/1742-6596/3080/1/012061" lang="en">Control of arc behavior and temperature field distribution in TIG welding of carbon steel under transverse magnetic fields</a></h3>
-            <p class="details">Xinru Liu, <strong>Yang She</strong>, et al. · <cite>Journal of Physics: Conference Series</cite> 3080(1), 012061</p>
-          </div>
-        </li>
-        <li class="publication">
-          <time class="publication-year" datetime="2025">2025</time>
-          <div class="publication-copy">
-            <h3><a href="https://www.rjggy.com/article/doi/10.14158/j.cnki.1001-3814.20230690" lang="zh-CN">缆式焊丝电弧物理特性研究现状</a></h3>
-            <p class="details"><strong>Yang She</strong> et al. · <cite data-zh="热加工工艺">Hot Working Technology</cite> 54(9), 6–11, 16</p>
-          </div>
-        </li>
-      </ul>
-    </section>
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <h2 class="section-title" id="publications-title">Publications</h2>
+        <ul class="publication-list" role="list">
+          <li class="publication" id="tig-paper">
+            <time class="publication-year" datetime="2026">2026</time>
+            <div class="publication-copy">
+              <h3><a href="https://doi.org/10.1016/j.matlet.2026.140372" lang="en">Effects of magnetic field orientation on bead formation and microstructure in TIG welding</a></h3>
+              <p class="details"><strong>Yang She</strong> et al. · <cite>Materials Letters</cite> 412, 140372</p>
+            </div>
+          </li>
+          <li class="publication" id="mbgn-paper">
+            <time class="publication-year" datetime="2026">2026</time>
+            <div class="publication-copy">
+              <h3><a href="https://doi.org/10.1016/j.ymssp.2026.114696" lang="en">MBGN: multimodal BiFPN gate network for in-process GMAW defect detection</a></h3>
+              <p class="details">Xuefeng Zhao, <strong>Yang She</strong>, et al. · <cite>Mechanical Systems and Signal Processing</cite> 258, 114696</p>
+            </div>
+          </li>
+          <li class="publication">
+            <time class="publication-year" datetime="2026">2026</time>
+            <div class="publication-copy">
+              <h3><a href="https://doi.org/10.1088/1742-6596/3277/1/012099" lang="en">Parallel performance of FEniCSx-based welding temperature field simulation on multicore CPUs</a></h3>
+              <p class="details">Zixuan Wen et al. · <cite>Journal of Physics: Conference Series</cite> 3277(1), 012099</p>
+            </div>
+          </li>
+          <li class="publication" id="solver-paper">
+            <time class="publication-year" datetime="2026">2026</time>
+            <div class="publication-copy">
+              <h3><a href="https://doi.org/10.1016/j.cwe.2026.100070" lang="en">Parallel benchmarking of Krylov solvers and preconditioners for three-dimensional welding thermal simulation using FEniCSx/PETSc</a></h3>
+              <p class="details">Xinyu Xie et al. · <cite>China Welding</cite> 35(4), 100070</p>
+            </div>
+          </li>
+          <li class="publication">
+            <time class="publication-year" datetime="2025">2025</time>
+            <div class="publication-copy">
+              <h3><a href="https://doi.org/10.1088/1742-6596/3080/1/012061" lang="en">Control of arc behavior and temperature field distribution in TIG welding of carbon steel under transverse magnetic fields</a></h3>
+              <p class="details">Xinru Liu, <strong>Yang She</strong>, et al. · <cite>Journal of Physics: Conference Series</cite> 3080(1), 012061</p>
+            </div>
+          </li>
+          <li class="publication">
+            <time class="publication-year" datetime="2025">2025</time>
+            <div class="publication-copy">
+              <h3><a href="https://www.rjggy.com/article/doi/10.14158/j.cnki.1001-3814.20230690" lang="en">Research Status of Arc Physical Characteristics of Cable-type Welding Wire Welding</a></h3>
+              <p class="details"><strong>Yang She</strong> et al. · <cite>Hot Working Technology</cite> 54(9), 6–11, 16 (in Chinese)</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-    <div class="detail-grid">
       <section class="section" id="education" aria-labelledby="education-title">
-        <h2 class="section-title" id="education-title" data-zh="教育经历">Education</h2>
+        <h2 class="section-title" id="education-title">Education</h2>
         <ul class="detail-list" role="list">
           <li>
-            <h3 data-zh="材料科学与工程博士研究生">Ph.D. candidate in Materials Science and Engineering</h3>
-            <p class="details" data-zh="北京理工大学 · 2024 年 9 月至今">Beijing Institute of Technology · Sep 2024–present</p>
-            <p class="details" data-zh="导师为于兴华教授">Advisor: Prof. Xinghua Yu</p>
+            <h3>Ph.D. candidate in Materials Science and Engineering</h3>
+            <p class="details">Beijing Institute of Technology · Sep 2024–present</p>
+            <p class="details">Advisor: Prof. Xinghua Yu</p>
           </li>
           <li>
-            <h3 data-zh="材料与化工硕士">M.Eng. in Materials and Chemical Engineering</h3>
-            <p class="details" data-zh="哈尔滨工程大学 · 2021 年 9 月至 2024 年 6 月">Harbin Engineering University · Sep 2021–Jun 2024</p>
+            <h3>M.Eng. in Materials and Chemical Engineering</h3>
+            <p class="details">Harbin Engineering University · Sep 2021–Jun 2024</p>
           </li>
           <li>
-            <h3 data-zh="焊接技术与工程学士">B.Eng. in Welding Technology and Engineering</h3>
-            <p class="details" data-zh="江苏科技大学 · 2016 年 9 月至 2020 年 6 月">Jiangsu University of Science and Technology · Sep 2016–Jun 2020</p>
+            <h3>B.Eng. in Welding Technology and Engineering</h3>
+            <p class="details">Jiangsu University of Science and Technology · Sep 2016–Jun 2020</p>
           </li>
         </ul>
       </section>
 
       <section class="section" id="skills" aria-labelledby="skills-title">
-        <h2 class="section-title" id="skills-title" data-zh="技术技能">Technical skills</h2>
+        <h2 class="section-title" id="skills-title">Technical skills</h2>
         <ul class="detail-list" role="list">
           <li>
-            <h3 data-zh="科学计算">Scientific computing</h3>
-            <p class="details" data-zh="Python、FEniCS/FEniCSx、PETSc、MPI、有限元建模、瞬态传热与迭代求解器基准测试。">Python, FEniCS/FEniCSx, PETSc, MPI, finite-element modeling, transient heat transfer, and iterative solver benchmarking.</p>
+            <h3>Scientific computing</h3>
+            <p class="details">Python, FEniCS/FEniCSx, PETSc, MPI, finite-element modeling, transient heat transfer, and iterative solver benchmarking.</p>
           </li>
           <li>
-            <h3 data-zh="科学机器学习">Scientific machine learning</h3>
-            <p class="details" data-zh="PyTorch、物理信息神经网络、算子学习与多模态深度学习。">PyTorch, physics-informed neural networks, operator learning, and multimodal deep learning.</p>
+            <h3>Scientific machine learning</h3>
+            <p class="details">PyTorch, physics-informed neural networks, operator learning, and multimodal deep learning.</p>
           </li>
         </ul>
       </section>
-    </div>
-  </main>
+    </main>
+
+    <aside class="sidebar" aria-label="Researcher profile">
+      <section class="profile-card" aria-labelledby="profile-name">
+        <img class="portrait" src="./portrait.jpg" alt="Portrait of Yang She" width="344" height="286" fetchpriority="high">
+        <div class="profile-body">
+          <h2 id="profile-name">Yang She</h2>
+          <p class="details">Ph.D. candidate<br>Beijing Institute of Technology</p>
+          <nav class="profile-links" aria-label="External profiles">
+            <a href="https://scholar.google.com/citations?user=sxteG-IAAAAJ&amp;hl=en">Google Scholar</a>
+            <a href="https://github.com/SheYanggg">GitHub</a>
+          </nav>
+        </div>
+      </section>
+      <section class="sidebar-section" aria-labelledby="interest-title">
+        <h2 id="interest-title">Research interests</h2>
+        <ul role="list">
+          <li>Physics-informed machine learning</li>
+          <li>Welding and additive manufacturing</li>
+          <li>Parallel finite-element simulation</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
 
   <footer class="site-footer shell">
-    <span>Yang She · <span lang="zh-CN">佘阳</span></span>
-    <a href="#about" data-zh="回到简介">Back to about</a>
+    <span>Yang She</span>
+    <a href="#name">Back to top</a>
   </footer>
-
-  <script>
-    const showChinese = new URLSearchParams(window.location.search).get('lang') === 'zh';
-    const currentLanguage = showChinese ? 'zh' : 'en';
-    const languageLinks = document.querySelectorAll('[data-language]');
-
-    if (showChinese) {
-      document.documentElement.lang = 'zh-CN';
-      document.title = '佘阳 · Yang She | 学术主页';
-      document.querySelectorAll('[data-zh]').forEach(element => {
-        element.textContent = element.dataset.zh;
-      });
-      document.querySelector('.name-secondary').lang = 'en';
-      document.querySelector('.site-nav').setAttribute('aria-label', '网站栏目');
-      document.querySelector('.portrait-frame img').alt = '佘阳的照片';
-    }
-
-    function updateLanguageLinks() {
-      languageLinks.forEach(link => {
-        const language = link.dataset.language;
-        link.href = '?lang=' + language + window.location.hash;
-        if (language === currentLanguage) {
-          link.setAttribute('aria-current', 'page');
-        } else {
-          link.removeAttribute('aria-current');
-        }
-      });
-    }
-
-    updateLanguageLinks();
-    window.addEventListener('hashchange', updateLanguageLinks);
-  </script>
 </body>
 </html>

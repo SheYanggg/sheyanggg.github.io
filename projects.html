@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research project details on computational welding, scientific machine learning, and parallel finite-element simulation by Yang She.">
+  <title>Research Projects | Yang She</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#project-content">Skip to projects</a>
+  <div class="site-top">
+    <header class="site-header shell">
+      <a class="brand" href="./">Yang She</a>
+      <nav class="site-nav" aria-label="Sections">
+        <a href="./#about">About</a>
+        <a href="./#projects" aria-current="page">Projects</a>
+        <a href="./#publications">Publications</a>
+        <a href="./#education">Education</a>
+        <a href="./#skills">Skills</a>
+      </nav>
+    </header>
+  </div>
+
+  <main class="project-page shell" id="project-content">
+    <a class="back-link" href="./#projects">All research projects</a>
+
+    <article class="project-detail post-card" id="thermal-modeling">
+      <div class="post-cover cover-thermal" aria-hidden="true"></div>
+      <div class="post-body article-content">
+        <p class="post-meta">Doctoral research · September 2024–present</p>
+        <h1>Physics-informed thermal modeling for wire arc additive manufacturing</h1>
+        <p>The temperature field in wire arc deposition changes throughout the pass. This project studies how physics-informed models can predict that transient field for a single track.</p>
+        <h2>My contribution</h2>
+        <p>I developed the models in PyTorch and used finite-element reference solutions to benchmark the temperature predictions.</p>
+        <h2>Research focus</h2>
+        <p>The comparison grounds the machine-learning predictions in the same thermal problem as the numerical reference. This work forms part of my doctoral research on welding thermomechanics.</p>
+      </div>
+    </article>
+
+    <article class="project-detail post-card" id="magnetic-welding">
+      <div class="post-cover cover-field" aria-hidden="true"></div>
+      <div class="post-body article-content">
+        <p class="post-meta">Study lead · First author</p>
+        <h1>Magnetic-field-assisted TIG welding</h1>
+        <p>This study investigated how the direction of a static magnetic field influences arc deflection, weld bead geometry, and microstructure during TIG welding of Q235 steel.</p>
+        <h2>My contribution</h2>
+        <p>I led study design and data curation and wrote the first draft of the article. The study compared weld-bead measurements with microstructural evidence from electron backscatter diffraction.</p>
+        <h2>Findings</h2>
+        <p>Changing field direction affected where the arc deflected and how the bead formed. Among the orientations tested, the study reported a fusion-line grain size of 3.47 µm under the X-directed field and 3.99 µm under the Y-directed field.</p>
+        <p class="article-sources"><a href="https://doi.org/10.1016/j.matlet.2026.140372">Read the Materials Letters paper</a></p>
+      </div>
+    </article>
+
+    <article class="project-detail post-card" id="defect-detection">
+      <div class="post-cover cover-monitoring" aria-hidden="true"></div>
+      <div class="post-body article-content">
+        <p class="post-meta">Software contributor · Second author</p>
+        <h1>Multimodal defect detection in gas metal arc welding</h1>
+        <p>MBGN uses signals collected during welding to identify defects. It combines synchronized current and voltage waveforms with high-speed molten-pool images.</p>
+        <h2>My contribution</h2>
+        <p>I contributed software to the project. The model fuses waveform and visual features in a bidirectional feature pyramid and applies a learned gate before classification.</p>
+        <h2>Evaluation</h2>
+        <p>On the held-out evaluation set, MBGN reached 0.748 accuracy and 0.719 macro-F1. Its macro-F1 was 0.120 higher than that of the strongest task-matched multimodal baseline reported in the paper.</p>
+        <p class="article-sources"><a href="https://doi.org/10.1016/j.ymssp.2026.114696">Read the Mechanical Systems and Signal Processing paper</a></p>
+      </div>
+    </article>
+
+    <article class="project-detail post-card" id="parallel-simulation">
+      <div class="post-cover cover-solver" aria-hidden="true"></div>
+      <div class="post-body article-content">
+        <p class="post-meta">Benchmark contributor · Co-author</p>
+        <h1>Parallel finite-element simulation of welding heat transfer</h1>
+        <p>Large transient thermal simulations spend a substantial share of their compute time solving sparse linear systems. This work compared solver and preconditioner configurations using FEniCSx and PETSc.</p>
+        <h2>My contribution</h2>
+        <p>I contributed to multicore performance evaluation and solver benchmarking for three-dimensional transient welding simulations.</p>
+        <h2>Benchmark scope</h2>
+        <p>The team compared 17 solver and preconditioner combinations on 1–16 CPU cores while holding the physical model, discretization, and solver controls fixed. The thermal model was checked against published 304 stainless steel welding data.</p>
+        <ul class="article-sources">
+          <li><a href="https://doi.org/10.1016/j.cwe.2026.100070">Read the China Welding solver benchmark</a></li>
+          <li><a href="https://doi.org/10.1088/1742-6596/3277/1/012099">Read the related multicore scaling study</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>Yang She</span>
+    <a href="./">Academic homepage</a>
+  </footer>
+</body>
+</html>
