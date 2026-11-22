@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Research project details on computational welding, scientific machine learning, and parallel finite-element simulation by Yang She.">
   <title>Research Projects | Yang She</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=3dfb4e0665cb">
 </head>
 <body>
   <a class="skip-link" href="#project-content">Skip to projects</a>
@@ -13,17 +13,60 @@
     <header class="site-header shell">
       <a class="brand" href="./">Yang She</a>
       <nav class="site-nav" aria-label="Sections">
-        <a href="./#about">About</a>
-        <a href="./#projects" aria-current="page">Projects</a>
-        <a href="./#publications">Publications</a>
-        <a href="./#education">Education</a>
-        <a href="./#skills">Skills</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./publications.html">Publications</a>
       </nav>
     </header>
   </div>
 
   <main class="project-page shell" id="project-content">
-    <a class="back-link" href="./#projects">All research projects</a>
+    <section class="project-index" aria-labelledby="projects-heading">
+      <h1 class="page-title" id="projects-heading">Research projects</h1>
+      <ul class="project-feed" role="list">
+        <li>
+          <article class="post-card">
+            <div class="post-cover cover-thermal" aria-hidden="true"></div>
+            <div class="post-body">
+              <p class="post-meta">Doctoral research · September 2024–present</p>
+              <h2><a href="#thermal-modeling">Physics-informed thermal modeling for wire arc additive manufacturing</a></h2>
+              <p class="details">PyTorch models for transient temperature prediction in single-track wire arc deposition, evaluated against finite-element reference solutions.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="post-card">
+            <div class="post-cover cover-field" aria-hidden="true"></div>
+            <div class="post-body">
+              <p class="post-meta">Study lead · First author</p>
+              <h2><a href="#magnetic-welding">Magnetic-field-assisted TIG welding</a></h2>
+              <p class="details">A study of how magnetic field direction affects arc deflection, weld bead geometry, and microstructure.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="post-card">
+            <div class="post-cover cover-monitoring" aria-hidden="true"></div>
+            <div class="post-body">
+              <p class="post-meta">Software contributor · Second author</p>
+              <h2><a href="#defect-detection">Multimodal defect detection in gas metal arc welding</a></h2>
+              <p class="details">MBGN combines synchronized electrical signals with molten-pool images to detect in-process weld defects.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="post-card">
+            <div class="post-cover cover-solver" aria-hidden="true"></div>
+            <div class="post-body">
+              <p class="post-meta">Benchmark contributor · Co-author</p>
+              <h2><a href="#parallel-simulation">Parallel finite-element simulation of welding heat transfer</a></h2>
+              <p class="details">A FEniCSx/PETSc benchmark of 17 solver and preconditioner combinations on 1–16 CPU cores.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <a class="back-link project-back" href="./projects.html">All research projects</a>
 
     <article class="project-detail post-card" id="thermal-modeling">
       <div class="post-cover cover-thermal" aria-hidden="true"></div>
